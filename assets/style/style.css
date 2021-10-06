@@ -1,0 +1,99 @@
+body {
+  background-color: darkorange;
+  font-family: "Fira Code";
+  font-weight: bold;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+ul,
+li,
+a {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+h1 {
+  font-size: 90px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.container {
+  max-width: 960px;
+  height: 100vh;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: right;
+}
+
+.menu li {
+  margin: 50px 0 0 20px;
+  box-sizing: border-box;
+}
+
+.menu li a {
+  padding: 5px;
+}
+
+.menu li a:hover {
+  background-color: #fff;
+  border-radius: 5px;
+  color: darkorange;
+}
+
+.title {
+  margin-top: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  background-image: url("../img/overlay.png"), url("../img/overlay.png"),
+    url("../img/highway.jpg");
+  background-position: bottom, center, top;
+  background-size: auto, auto, cover;
+  height: 100vh;
+  transition: all 0.5 linear;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+}
+
+.about img {
+  height: 200px;
+  margin: 30px 0;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.separar {
+  height: 5px;
+  width: 30px;
+  background-color: #fff;
+}
+
+.description {
+  font-size: 19px;
+  text-align: center;
+  color: #fff;
+  line-height: 2;
+}
