@@ -25,6 +25,7 @@ a {
 h1 {
   font-size: 90px;
   text-align: center;
+  margin: 0 20px;
 }
 
 h2 {
@@ -34,12 +35,13 @@ h2 {
 .container {
   max-width: 960px;
   height: 100vh;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .menu {
   display: flex;
   justify-content: right;
+  margin: 0 20px;
 }
 
 .menu li {
@@ -59,9 +61,7 @@ h2 {
 
 .title {
   margin-top: 30vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .about {
@@ -73,27 +73,42 @@ h2 {
   transition: all 0.5 linear;
 }
 
+.quemsoueu {
+  margin: 20px;
+}
+
 .profile {
   display: flex;
   justify-content: center;
 }
 
-.about img {
+.profile img {
   height: 200px;
-  margin: 30px 0;
+  margin: 30px 0 auto;
   border-radius: 50%;
   border: 5px solid #fff;
-}
-
-.separar {
-  height: 5px;
-  width: 30px;
-  background-color: #fff;
 }
 
 .description {
   font-size: 19px;
   text-align: center;
   color: #fff;
-  line-height: 2;
+  line-height: 1.8;
+}
+
+@media (max-width: 860px) {
+  h1 {
+    font-size: 70px;
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  h2 {
+    font-size: 35px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 1.8;
+  }
 }
