@@ -42,13 +42,16 @@ a {
 }
 
 .menu li a,
-.profile p {
-  padding: 5px 0;
+.logo p {
+  text-transform: uppercase;
+  padding: 10px;
   color: #520A0A;
 }
 
 .menu li a:hover {
-  color: red;
+  color: #fff;
+  background-color: #520A0A;
+  border-radius: 10px;
 }
 
 .banner {
