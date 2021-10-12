@@ -90,7 +90,8 @@ a {
   border-top: 3px solid #fff;
 }
 
-.title, .contact-me {
+.title,
+.contact-me {
   text-align: center;
   font-size: 25px;
   padding: 10px;
@@ -112,7 +113,7 @@ a {
   margin: 10px;
   border: 2px solid #fff;
   border-radius: 10px;
-  background-color: #fff;;
+  background-color: #fff;
 }
 
 .projetc img {
@@ -140,15 +141,15 @@ a {
 }
 
 .dot1 {
-  background-color: #FD5F58;
+  background-color: #fd5f58;
 }
 
 .dot2 {
-  background-color: #FEBD2C;
+  background-color: #febd2c;
 }
 
 .dot3 {
-  background-color: #FEC402;
+  background-color: #fec402;
 }
 
 .links {
@@ -159,10 +160,20 @@ a {
   margin-bottom: 5vh;
 }
 
+.contact-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-me p {
+  font-size: 18px;
+  text-transform: none;
+}
+
 .icons {
   display: flex;
   justify-content: center;
-  padding: 50px
+  padding: 0 50px;
 }
 
 .icons a {
@@ -216,6 +227,19 @@ a {
   }
 }
 
+@media (max-width: 890px) {
+  .projetc {
+    margin: 10px;
+    width: 500px;
+    height: 300px;
+  }
+
+  .projetc img {
+    width: 100%;
+    height: max-content;
+  }
+}
+
 @media (max-width: 550px) {
   .profile img {
     max-width: 120px;
@@ -228,5 +252,25 @@ a {
 
   .icons a {
     font-size: 70px;
+  }
+
+  .projetc {
+    margin: 10px;
+    width: 500px;
+    height: max-content;
+  }
+}
+
+@media (max-width: 420px) {
+  .projetc {
+    margin: 5px 0;
+  }
+
+  .projetc img {
+    max-width: 100%;
+  }
+
+  .icons a {
+    font-size: 50px;
   }
 }
