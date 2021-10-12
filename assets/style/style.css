@@ -119,6 +119,12 @@ a {
 .projetc img {
   height: 200px;
   border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.projetc img:hover {
+  border: 2px solid #555;
+  cursor: pointer;
 }
 
 .dot {
