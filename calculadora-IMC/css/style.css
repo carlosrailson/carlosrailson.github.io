@@ -32,12 +32,8 @@ h2 {
 .calculadora {
   display: flex;
   justify-content: space-between;
+  max-width: 310px;
   margin-bottom: 5px;
-}
-
-.peso,
-.altura {
-  display: flex;
 }
 
 .calculadora input {
@@ -153,8 +149,9 @@ footer p {
 
   .resultado {
     padding: 10px;
-    width: 290px;
+    width: 100%;
     margin: 10px 0 0;
+    box-sizing: border-box;
   }
 }
 
