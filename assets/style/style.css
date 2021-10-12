@@ -236,6 +236,7 @@ a {
 @media (max-width: 890px) {
   .projetc {
     margin: 10px;
+    padding: 0px;
     width: 500px;
     height: 300px;
   }
@@ -243,6 +244,7 @@ a {
   .projetc img {
     width: 100%;
     height: max-content;
+    box-sizing: border-box;
   }
 }
 
@@ -278,5 +280,11 @@ a {
 
   .icons a {
     font-size: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .icons a {
+    font-size: 40px;
   }
 }
