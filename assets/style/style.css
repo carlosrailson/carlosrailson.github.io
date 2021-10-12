@@ -29,6 +29,10 @@ a {
   margin: auto;
 }
 
+.menu-button {
+  display: none;
+}
+
 .home {
   background-color: #fff;
   height: 10vh;
@@ -86,7 +90,7 @@ a {
   border-top: 3px solid #fff;
 }
 
-.title {
+.title, .contact-me {
   text-align: center;
   font-size: 25px;
   padding: 10px;
@@ -147,12 +151,54 @@ a {
   background-color: #FEC402;
 }
 
+.links {
+  background-color: #000;
+  border-top: 3px solid #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 5vh;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  padding: 50px
+}
+
+.icons a {
+  color: #555;
+  font-size: 100px;
+  max-width: max-content;
+  margin: 10px;
+}
+
+.footer-area {
+  height: 10vh;
+  background-color: #222;
+  display: flex;
+}
+
 @media (max-width: 960px) {
+  .logo {
+    font-size: 20px;
+  }
+
   .banner {
     margin-top: 0;
     height: 90vh;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+    padding: 10px;
+    font-size: 40px;
+    color: #520a0a;
   }
 
   .profile img {
@@ -161,6 +207,12 @@ a {
 
   .description {
     font-size: 18px;
+  }
+
+  .links {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin: 0;
   }
 }
 
@@ -172,5 +224,9 @@ a {
   .description {
     margin: 30px 30px;
     font-size: 14px;
+  }
+
+  .icons a {
+    font-size: 70px;
   }
 }
