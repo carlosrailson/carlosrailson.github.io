@@ -12,7 +12,7 @@ function imc() {
 
   // condições para verificar os inputs e retornar um resultado com informações coerentes:
   if (altura == '' && peso == '') {
-    resultado.innerHTML = `<h2>Preenxa todos os campos</h2>`
+    resultado.innerHTML = `<h2>Preencha todos os campos</h2>`
   } else if (!altura || altura == '') {
     resultado.innerHTML = `<h2>Altura inválida! Tente novamente. Separe as casas decimais por ponto. Ex: altura (1.83)</h2>`
   } else if (!peso ||  peso == '' ) {
