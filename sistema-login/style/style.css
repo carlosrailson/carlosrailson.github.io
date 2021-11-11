@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -7,7 +11,13 @@ body {
   background-position: center;
   background-size: cover;
   color: #333;
+}
+
+.container {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -21,17 +31,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-p {
-  margin: 0;
-}
-
-.container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .form form {
   display: flex;
   flex-direction: column;
@@ -40,6 +39,10 @@ p {
   background-color: rgba(204, 204, 204, 0.623);
   border-radius: 10px;
   border: 2px solid #555;
+}
+
+p {
+  margin: 0;
 }
 
 .form input,
