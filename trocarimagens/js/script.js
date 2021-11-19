@@ -1,4 +1,5 @@
 const camisa = document.querySelector('.camisa')
+const details = document.querySelector('.details')
 const title = document.querySelector('.title')
 const tamanhos = document.querySelector('.resultado')
 const branca = document.querySelector('.branca')
@@ -9,7 +10,8 @@ const tamanhoG = document.querySelector('.g')
 
 function camisaBranca() {
   camisa.src = "./trocarimagens/img/camisabranca.jpg"
-  title.innerHTML ='<h1> Camiseta Mockup cor Branca</h1> <p>A camiseta Branca Mockup é feita de lã natural e costurada com linho fino da índia, a estampa é produzida de forma artesanal e colada manualmente. A cor branca é excelente para uso casual.</p>'
+  details.innerHTML ='<h2>Especificações e detalhes</h2><p>A camiseta Branca Mockup é feita de lã natural e costurada com linho fino da índia, a estampa é produzida de forma artesanal e colada manualmente.</p>'
+  title.innerHTML = 'Camiseta Mockup Branca'
   preta.classList.remove('class-js')
   branca.classList.add('class-js')
   tamanhos.innerHTML = ' '
@@ -18,7 +20,8 @@ function camisaBranca() {
 
 function camisaPreta() {
   camisa.src = "./trocarimagens/img/camisapreta.jpg"
-  title.innerHTML ='<h1> Camiseta Mockup cor Preta</h1> <p> A camiseta Preta Mockup é feita para quem gosta de se divertir. Produzida com ceda preta dos altos montes da capadocia, te proporciona muito conforto. É ótima para para usar no trabalho e em casa. </p>'
+  details.innerHTML ='<h2>Especificações e detalhes</h2> <p> A camiseta Preta Mockup é feita para quem gosta de se divertir. Produzida com ceda preta dos altos montes da capadocia, te proporciona muito conforto.</p>'
+  title.innerHTML = 'Camiseta Mockup Preta'
   branca.classList.remove('class-js')
   preta.classList.add('class-js')
   tamanhos.innerHTML = ' '

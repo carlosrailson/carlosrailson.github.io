@@ -46,18 +46,18 @@ button:hover {
   width: 300px;
   padding: 10px;
   margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .description p {
   font-size: 14px;
 }
 
-.title {
-  height: 200px;
-}
-
-.title h1 {
+.title h1, h1, h2 {
   margin: 0;
+  padding: 10px 0;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -67,6 +67,11 @@ button:hover {
   padding: 10px;
   height: 120px;
   background: #ddd;
+}
+
+span {
+  font-weight: bold;
+  color: #555;
 }
 
 .tamanhos p {
