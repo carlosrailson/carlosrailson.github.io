@@ -1,0 +1,421 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Varela Round";
+  color: #555;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+  border: 0.12rem solid transparent;
+  border-radius: 0.3rem;
+}
+
+a:hover {
+  color: #777;
+  background-color: #ffe177;
+  background-color: #ffe177;
+  border: 0.12rem solid transparent;
+  box-shadow: 0 1px 3px #222;
+}
+
+.header-container {
+  height: 100vh;
+  background-color: darkred;
+  background: url("../img/wall2.jpg");
+  background-size: cover;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo a:hover {
+  box-shadow: 0 0 0;
+}
+
+.logo img {
+  width: 3rem;
+}
+
+.logo span {
+  color: #ffe177;
+}
+
+.menu-mobile {
+  width: 2rem;
+  display: none;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu li {
+  padding: 0.2rem;
+  margin: 0;
+}
+
+.title {
+  width: max-content;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  position: relative;
+  top: 30vh;
+}
+
+.title h1,
+.title p {
+  color: #fff;
+  text-shadow: 1px 1px 2px #555;
+}
+
+.title h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.title h1::after {
+  content: "";
+  width: 20rem;
+  height: 0.2rem;
+  background-color: #fff;
+  display: block;
+  margin: 1rem auto;
+}
+
+.title p {
+  font-size: 1.5rem;
+}
+
+.sobre-nos {
+  /* height: 100vh; */
+  background-color: #fff;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.sobre-nos h2::after,
+.produtos h2::after,
+.comprar h2::after {
+  content: "";
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #ffe177;
+  display: block;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.sobre-nos h2,
+.produtos h2,
+.comprar h2 {
+  font-size: 2.5rem;
+}
+
+.sobre-nos-resumo {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+
+.fa-quote-left {
+  font-size: 3rem;
+  margin: 3rem 0 1rem 0;
+}
+
+.fa-quote-right {
+  text-align: right;
+  font-size: 3rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.sobre-nos-imagem {
+  min-width: 23rem;
+  height: max-content;
+  display: flex;
+  margin: 2rem auto;
+}
+
+.sobre-nos-imagem img {
+  border-radius: 1rem;
+  margin-bottom: 11vh;
+  border-bottom: 0.4rem solid #ffe177;
+}
+
+.portfolio {
+  color: #fff;
+  background-color: #999;
+}
+
+.produtos h2 {
+  padding-top: 2rem;
+}
+
+.produtos-galeria {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  /* background-color: #ffe177; */
+}
+
+.produtos-galeria img {
+  border-radius: 0.5rem;
+}
+
+.produtos-caneca,
+.produtos-azulejo,
+.produtos-camisa {
+  width: 20rem;
+  background-color: #777;
+  padding: 1rem;
+  margin: 0 0 3rem 0;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 0.4rem solid #666;
+}
+
+.produtos-caneca:hover,
+.produtos-azulejo:hover,
+.produtos-camisa:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px #000;
+  /* width: 20.2rem; */
+}
+
+.produtos-p {
+  padding: 1rem 0;
+}
+.produtos-galeria a {
+  border: 0.11rem solid #fff;
+  padding: 0.5rem 0.7rem;
+}
+
+.produtos-galeria a:hover {
+  border: 0.11rem solid transparent;
+}
+
+.comprar {
+  height: 100vh;
+  padding-top: 3rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  /* color: #EE4D30; */
+}
+
+.contato {
+  height: 100vh;
+  background-color: #222;
+  background: url("../img/lampada3.jpg");
+  background-size: auto;
+  background-position: right;
+  color: #888;
+}
+
+.icons-contato {
+  /* width: 100%; */
+  padding-top: 12rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.icons {
+  width: 40rem;
+  /* background-color: turquoise; */
+}
+
+.icon-img img {
+  width: 3rem;
+  display: flex;
+  font-size: 2rem;
+}
+
+.icon-img a {
+  font-size: 2rem;
+  display: flex;
+  background-color: transparent;
+}
+
+.icon-img a:hover {
+  color: #888;
+  box-shadow: transparent;
+}
+@media (max-width: 1140px) {
+  .container {
+    margin: 0 1rem;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .menu-mobile:hover {
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .title {
+    width: 100%;
+  }
+
+  .title h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  .title p {
+    font-size: 1.5rem;
+  }
+
+  .sobre-nos-resumo {
+    font-size: 1.2rem;
+  }
+
+  .fa-quote-left,
+  .fa-quote-right {
+    font-size: 2rem;
+  }
+
+  .sobre-nos-imagem {
+    max-width: 18rem;
+  }
+
+  .onde-comprar {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    /* float: left; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* gap: 2rem; */
+    /* height: 30rem; */
+    /* background-color: #f9f0ee77;
+    border-radius: 1rem; */
+    /* width: max-content; */
+    /* padding-right: 4rem; */
+    /* width: 25rem;
+    height: max-content;
+    margin-bottom: 3rem; */
+  }
+
+  .icons {
+    width: 100%;
+    /* background-color: turquoise; */
+  }
+}
+
+@media (max-width: 900px) {
+  .sobre-nos-imagem {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .produtos {
+    /* margin: 0 auto; */
+  }
+  .produtos-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+  }
+
+  .produtos-caneca,
+  .produtos-azulejo,
+  .produtos-camisa {
+    width: 80%;
+    margin: 1rem auto;
+    /* padding-bottom: 10rem; */
+  }
+
+  .icons-contato {
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .icons {
+    width: 100%;
+    font-size: 1rem;
+    /* background-color: turquoise; */
+  }
+  
+  .icon-img img {
+    width: 2rem;
+  }
+
+  .icon-img a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .produtos-caneca,
+  .produtos-azulejo,
+  .produtos-camisa {
+    width: 100%;
+  }
+
+  .icon-img img {
+    width: 1.7rem;
+  }
+
+  .icon-img a {
+    font-size: 1.1rem;
+  }
+}
