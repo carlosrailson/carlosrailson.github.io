@@ -55,6 +55,7 @@ a:hover {
 }
 
 .header {
+  background-color: #999;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -98,8 +99,11 @@ a:hover {
 }
 
 .menu li {
+  /* display: block; */
+  /* list-style: none; */
   padding: 0.2rem;
   margin: 0;
+  /* display: flex ; */
 }
 
 .title {
@@ -265,15 +269,13 @@ a:hover {
 }
 
 .icons-contato {
-  /* width: 100%; */
-  padding-top: 12rem;
+  padding-top: 15rem;
   display: flex;
   flex-direction: row-reverse;
 }
 
 .icons {
   width: 40rem;
-  /* background-color: turquoise; */
 }
 
 .icon-img img {
@@ -290,15 +292,48 @@ a:hover {
 
 .icon-img a:hover {
   color: #888;
-  box-shadow: transparent;
+  box-shadow: 0 0 0;
+}
+
+footer {
+  background-color: #555;
+  color: #aaa;
+}
+
+.footer {
+  width: max-content;
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.la {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.la p {
+  font-size: 1.5rem;
+  display: inline;
+}
+
+.l {
+  color: #fff;
+}
+
+.a {
+  color: #ffe177;
+}
+.footer img {
+  max-width: 2rem;
+  /* max-height: 2rem; */
+  /* background-color: #ffe177; */
+  display: inline-block;
 }
 @media (max-width: 1140px) {
   .container {
-    margin: 0 1rem;
-  }
-
-  .menu-mobile {
-    display: block;
+    padding: 0 1rem;
   }
 
   .menu-mobile:hover {
@@ -306,7 +341,34 @@ a:hover {
   }
 
   .menu {
-    display: none;
+    /* display: none; */
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    right: 0;
+    height: 0;
+    background-color: #999;
+    z-index: 1000;
+    visibility: hidden;
+    /* overflow-y: hidden; */
+  }
+
+  #nav.active .menu {
+    height: 90vh;
+    transition: 0.6s;
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    padding-top: 3rem;
+    visibility: visible;
+    overflow-y: auto;
+    /* width: 100%; */
+  }
+
+  .menu-mobile {
+    display: flex;
+    /* margin-top: 10rem; */
   }
 
   .title {
@@ -335,40 +397,59 @@ a:hover {
     max-width: 18rem;
   }
 
+  .produtos-caneca:hover,
+  .produtos-azulejo:hover,
+  .produtos-camisa:hover {
+    box-shadow: 0 0 0;
+  }
+
   .onde-comprar {
     font-size: 1.1rem;
     display: flex;
     flex-direction: column;
-    /* float: left; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* gap: 2rem; */
-    /* height: 30rem; */
-    /* background-color: #f9f0ee77;
-    border-radius: 1rem; */
-    /* width: max-content; */
-    /* padding-right: 4rem; */
-    /* width: 25rem;
-    height: max-content;
-    margin-bottom: 3rem; */
   }
 
   .icons {
     width: 100%;
-    /* background-color: turquoise; */
   }
 }
 
 @media (max-width: 900px) {
+  .contato {
+    height: max-content;
+  }
   .sobre-nos-imagem {
     display: none;
+  }
+
+  .icons-contato {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
   }
 }
 
 @media (max-width: 700px) {
-  .produtos {
-    /* margin: 0 auto; */
+  .sobre-nos {
+    height: 100vh;
   }
+
+  .sobre-nos h2,
+  .produtos h2,
+  .comprar h2 {
+    font-size: 2rem;
+  }
+
+  .sobre-nos-resumo {
+    font-size: 1.1rem;
+  }
+
+  .fa-quote-left,
+  .fa-quote-right {
+    font-size: 1.8rem;
+  }
+
   .produtos-galeria {
     display: flex;
     flex-wrap: wrap;
@@ -380,21 +461,8 @@ a:hover {
   .produtos-camisa {
     width: 80%;
     margin: 1rem auto;
-    /* padding-bottom: 10rem; */
   }
 
-  .icons-contato {
-    padding-top: 12rem;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  
-  .icons {
-    width: 100%;
-    font-size: 1rem;
-    /* background-color: turquoise; */
-  }
-  
   .icon-img img {
     width: 2rem;
   }
@@ -402,9 +470,21 @@ a:hover {
   .icon-img a {
     font-size: 1.5rem;
   }
+
+  .icons-contato {
+    height: 100%;
+    display: flex;
+    padding: 5rem 0;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
 }
 
 @media (max-width: 540px) {
+  .title {
+    top: 28vh;
+  }
+
   .produtos-caneca,
   .produtos-azulejo,
   .produtos-camisa {
