@@ -165,7 +165,7 @@ a:hover {
   font-size: 2.5rem;
 }
 
-.sobre-nos-resumo {
+.sobre-nos-resumo, .comprar {
   display: flex;
   flex-direction: column;
   font-size: 1.3rem;
@@ -252,11 +252,54 @@ a:hover {
 }
 
 .comprar {
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 3rem;
   font-size: 1.3rem;
-  line-height: 1.5;
+  line-height: 2;
+  /* background-image: url("/assets/img/canecaoriginal6.jpg");
+  background-size: cover; */
   /* color: #EE4D30; */
+}
+
+.comprar img {
+  width: 20rem;
+  background-color: #f7f7f7;
+  border-radius: 1rem;
+}
+
+.comprar img:hover {
+  background-color: #ffe177;
+  cursor: pointer;
+}
+
+.comprar-container {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  /* background-color: #ccc; */
+  /* justify-content: center; */
+}
+
+.comprar-container a {
+  color: #fff;
+  background-color: #999;
+  padding: .5rem 1.5rem;
+  display: block;
+  width: max-content;
+  font-size: 1.1rem;
+}
+
+.comprar-container a:hover {
+  background-color: #ffe177;
+  color: #555;
+}
+
+.comprartexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .contato {
@@ -415,6 +458,9 @@ footer {
 }
 
 @media (max-width: 900px) {
+  .comprar-container {
+    flex-direction: column;
+  }
   .contato {
     height: max-content;
   }
@@ -441,13 +487,17 @@ footer {
     font-size: 2rem;
   }
 
-  .sobre-nos-resumo {
+  .sobre-nos-resumo, .comprar {
     font-size: 1.1rem;
   }
 
   .fa-quote-left,
   .fa-quote-right {
     font-size: 1.8rem;
+  }
+
+  .comprar img {
+    width: 100%;
   }
 
   .produtos-galeria {
