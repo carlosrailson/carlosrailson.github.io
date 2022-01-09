@@ -65,7 +65,7 @@ a {
 }
 
 .logo span {
-  color: #ffe177;
+  color: ##FFD80A;
 }
 
 .menu-mobile {
@@ -89,7 +89,7 @@ a {
 }
 
 .menu a:hover {
-  background-color: #ffe177;
+  background-color: ##FFD80A;
   color: #222;
   box-shadow: 0 2px 0 #eee;
 }
@@ -142,7 +142,7 @@ a {
   content: "";
   width: 3rem;
   height: 0.2rem;
-  background-color: #ffe177;
+  background-color: ##FFD80A;
   display: block;
   margin: 0.5rem 0 1.5rem 0;
 }
@@ -173,7 +173,7 @@ a {
 .sobre-img img {
   width: 100%;
   border-radius: 1rem;
-  border-bottom: 0.4rem solid #ffe177;
+  border-bottom: 0.4rem solid ##FFD80A;
   /* margin-bottom: 11vh; */
   background-color: #eee;
   margin-top: 3rem;
@@ -242,7 +242,7 @@ a {
   background-position: center;
   border-radius: 1rem;
   margin-bottom: 2rem;
-  border-bottom: 0.4rem solid #ffe177;
+  border-bottom: 0.4rem solid ##FFD80A;
 }
 
 .comprar-na-shopee {
@@ -274,7 +274,7 @@ a {
 }
 
 .comprar-online a:hover {
-  background-color: #ffe177;
+  background-color: ##FFD80A;
 }
 
 .materiais {
@@ -307,7 +307,7 @@ a {
 .polimero,
 .poliester {
   background-color: rgb(204, 112, 0);
-  border: 0.13rem solid #ffe177;
+  border: 0.13rem solid ##FFD80A;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   padding: 0 1rem;
@@ -393,11 +393,11 @@ a {
 }
 
 .links a:hover {
-  background-color: #ffe177;
+  background-color: ##FFD80A;
 }
 
 .boaideia {
-  color: #ffe177;
+  color: ##FFD80A;
 }
 
 .footer {
@@ -414,7 +414,8 @@ a {
 }
 
 .footer span {
-  color: #ffe177;
+  /* color: ##FFD80A; */
+  color: #FFD80A;
 }
 
 @media (max-width: 1130px) {
