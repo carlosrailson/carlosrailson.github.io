@@ -54,7 +54,7 @@ a {
 
 .logo a {
   background-color: transparent;
-  color: #eee;
+  color: #fff;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -65,7 +65,7 @@ a {
 }
 
 .logo span {
-  color: ##FFD80A;
+  color: #ffd80a;
 }
 
 .menu-mobile {
@@ -84,12 +84,12 @@ a {
 
 .menu a {
   background-color: transparent;
-  color: #eee;
+  color: #fff;
   padding: 0.2rem 0.5rem;
 }
 
 .menu a:hover {
-  background-color: ##FFD80A;
+  background-color: #ffd80a;
   color: #222;
   box-shadow: 0 2px 0 #eee;
 }
@@ -127,11 +127,14 @@ a {
   font-size: 1.5rem;
 }
 
-.sobre {
+.sobre-container {
   margin-bottom: 1rem;
   display: flex;
-  justify-content: space-between;
+  /* background-color: #ffd80a; */
+  height: max-content;
+  align-items: center;
   gap: 5rem;
+  margin-bottom: 5rem;
 }
 
 .sobre h2::after,
@@ -142,7 +145,7 @@ a {
   content: "";
   width: 3rem;
   height: 0.2rem;
-  background-color: ##FFD80A;
+  background-color: #ffd80a;
   display: block;
   margin: 0.5rem 0 1.5rem 0;
 }
@@ -165,25 +168,26 @@ a {
 
 .sobre-img {
   max-width: 50%;
-  height: max-content;
-  display: flex;
-  margin: 2rem auto;
+  /* height: max-content; */
+  /* display: flex; */
+  /* margin: 2rem auto; */
 }
 
 .sobre-img img {
   width: 100%;
   border-radius: 1rem;
-  border-bottom: 0.4rem solid ##FFD80A;
+  border-bottom: 0.4rem solid #ffd80a;
   /* margin-bottom: 11vh; */
   background-color: #eee;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 
 .produtos {
-  background-image: url("../img/colorfull.jpg");
+  /* background-image: url("../img/colorfull.jpg"); */
   background-size: cover;
   background-position: center;
   /* background-attachment: fixed; */
+  background-color: #58d7db;
 }
 
 .produtos-galeria {
@@ -242,7 +246,7 @@ a {
   background-position: center;
   border-radius: 1rem;
   margin-bottom: 2rem;
-  border-bottom: 0.4rem solid ##FFD80A;
+  border-bottom: 0.4rem solid #ffd80a;
 }
 
 .comprar-na-shopee {
@@ -257,6 +261,7 @@ a {
 .comprar-na-shopee img {
   max-width: 4rem;
   float: left;
+  padding: 0.5rem;
 }
 .comprar-online {
   display: flex;
@@ -274,7 +279,7 @@ a {
 }
 
 .comprar-online a:hover {
-  background-color: ##FFD80A;
+  background-color: #ffd80a;
 }
 
 .materiais {
@@ -307,7 +312,7 @@ a {
 .polimero,
 .poliester {
   background-color: rgb(204, 112, 0);
-  border: 0.13rem solid ##FFD80A;
+  border: 0.13rem solid #ffd80a;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   padding: 0 1rem;
@@ -341,25 +346,14 @@ a {
   background-position: right;
 }
 
-.banner {
-  background-image: url("../img/camisa1.jpg");
-  background-size: cover;
-  background-position: bottom;
-  height: 30vh;
-  border-top: 0.3rem solid #eee;
-  border-bottom: 0.3rem solid #eee;
-}
-
 .links {
-  background-color: #333;
-  /* color: #ccc; */
+  /* background-color: #333;  */
   height: 100vh;
-  background-image: url("../img/wall4.jpg");
+  /* background-image: url("../img/wall4.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: top; */
 }
-
-.links h3 {
+*/ .links h3 {
   font-size: 2.2rem;
 }
 
@@ -373,15 +367,6 @@ a {
   width: 50%;
 }
 
-.links-redes {
-  background-image: url("../img/azulejosporcelanas.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  height: 60vh;
-  /* display: none; */
-}
-
 .links a {
   color: #222;
   background-color: rgba(238, 238, 238, 0.604);
@@ -393,11 +378,11 @@ a {
 }
 
 .links a:hover {
-  background-color: ##FFD80A;
+  background-color: #ffd80a;
 }
 
 .boaideia {
-  color: ##FFD80A;
+  color: #ffd80a;
 }
 
 .footer {
@@ -415,7 +400,7 @@ a {
 
 .footer span {
   /* color: ##FFD80A; */
-  color: #FFD80A;
+  color: #ffd80a;
 }
 
 @media (max-width: 1130px) {
@@ -426,21 +411,22 @@ a {
 
 @media (max-width: 950px) {
   .container-mobile {
-    background-color: #555;
+    background-color: #58d7db;
   }
 
   .menu-mobile {
     display: block;
+    /* color: ffd80a; */
   }
-  
+
   .menu {
     display: block;
     position: absolute;
     width: 100%;
     top: 10vh;
     right: 0px;
-    background-color: #555;
-    transition: .5s;
+    background-color: #58d7db;
+    transition: 0.5s;
     z-index: 1;
     height: 0;
     visibility: hidden;
@@ -448,7 +434,7 @@ a {
     text-align: center;
     padding-top: 5rem;
   }
-  
+
   #nav.active .menu {
     /* display: none; */
     height: 90vh;
@@ -460,7 +446,6 @@ a {
     padding: 1rem;
     margin: 0 0.5rem;
   }
-
 
   .menu-mobile:hover {
     cursor: pointer;
@@ -483,7 +468,7 @@ a {
   }
 
   .produtos p {
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
     line-height: 1.2rem;
   }
 
@@ -497,6 +482,10 @@ a {
 }
 
 @media (max-width: 770px) {
+  .sobre-container {
+    gap: 3rem;
+  }
+
   .sobre h2,
   .produtos h2,
   .comprar h2,
@@ -546,8 +535,12 @@ a {
   .sobre-resumo {
     width: 100%;
   }
-  .sobre-img {
-    display: none;
+
+  .sobre-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    /* flex-direction: column; */
   }
 
   .comprar-container {
@@ -573,11 +566,23 @@ a {
     /* padding-top: 2rem; */
   }
 
+  .sobre-container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    /* height: max-content; */
+    /* background-color: blue; */
+  }
+
+  .sobre-img {
+    max-width: 100rem;
+    margin: 0 auto;
+    /* background-color: #ffd80a; */
+  }
+
   .sobre-resumo p,
   .comprar-na-shopee,
   .comprar-online a,
   .materiais p {
-    font-size: 0.9rem;
     line-height: 1.5;
   }
 
