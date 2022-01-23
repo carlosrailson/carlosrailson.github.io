@@ -281,6 +281,8 @@ a {
 
 .materiais {
   background-color: rgb(226, 124, 0);
+  background-image: url("../img/colorfull.jpg");
+  background-position: center;
   /* padding-bottom: 10rem; */
 }
 
@@ -293,6 +295,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 5rem;
 }
 
 .materiais-container p {
@@ -309,7 +312,9 @@ a {
 .polimero,
 .poliester {
   background-color: rgb(204, 112, 0);
+  background-color: #58d7db;
   border: 0.13rem solid #ffd80a;
+  border: 0.13rem solid #222;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   padding: 0 1rem;
@@ -322,6 +327,7 @@ a {
 .poliester:hover {
   cursor: pointer;
   background-color: rgb(189, 104, 0);
+  background-color: #47c6ca;
 }
 
 .porcelana-aaa-p,
@@ -341,45 +347,6 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-}
-
-.links {
-  /* background-color: #333;  */
-  height: 100vh;
-  /* background-image: url("../img/wall4.jpg");
-  background-size: cover;
-  background-position: top; */
-}
-*/ .links h3 {
-  font-size: 2.2rem;
-}
-
-.links-container {
-  display: flex;
-  gap: 3rem;
-}
-
-.links-description,
-.links-redes {
-  width: 50%;
-}
-
-.links a {
-  color: #222;
-  background-color: rgba(238, 238, 238, 0.604);
-  padding: 1rem 2rem;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-  border: 0.13rem solid #222;
-  border-radius: 0.5rem;
-}
-
-.links a:hover {
-  background-color: #ffd80a;
-}
-
-.boaideia {
-  color: #ffd80a;
 }
 
 .footer {
@@ -408,7 +375,7 @@ a {
 
 @media (max-width: 950px) {
   .container-mobile {
-    background-color: #58d7db;
+    background-color: #555;
   }
 
   .menu-mobile {
@@ -422,7 +389,7 @@ a {
     width: 100%;
     top: 10vh;
     right: 0px;
-    background-color: #58d7db;
+    background-color: #555;
     transition: 0.5s;
     z-index: 1;
     height: 0;
@@ -551,6 +518,10 @@ a {
   .comprar-na-shopee {
     width: 100%;
   }
+
+  .produtos-galeria img:hover {
+    padding: .5rem;
+  }
 }
 
 @media (max-width: 650px) {
@@ -662,5 +633,17 @@ a {
   .azulejo,
   .camisa {
     max-width: 12rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .produtos-galeria {
+    justify-content: space-between;
+  }
+  .caneca,
+  .azulejo,
+  .camisa {
+    max-width: 49%;
+    font-size: .7rem;
   }
 }
